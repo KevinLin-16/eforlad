@@ -1,0 +1,23 @@
+body{
+	background-color: lightblue;
+}
+h1{
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	color: green;
+}
+p{
+	font-weight: lighter;
+}
+.extra1 p{
+	color: red;
+	border-left-color: #dcdcdc;
+}
+.extra2 p{
+	color: yellow;
+}
+img{
+	float: left;
+	margin: 10% 10% 10% 10%;
+}
