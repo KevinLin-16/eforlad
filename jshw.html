@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function game(){
+		var rand = Math.floor(Math.random()*10+1);
+		document.writeln("Correct, the answer is "+rand+".");
+		var times = 1;
+		
+		var guessing = window.prompt("Enter the number(1~10)")
+		while(guessing!=rand){
+			times++;
+			guessing = window.prompt("This is the "+times+" guessing, please enter the number(1~10)");
+		}
+		document.writeln("You use "+times+" times to find the answer");
+		if(times==1){document.writeln(", amazing!");}
+		else if(times>1&&times<=5){document.writeln(", not bad~");}
+		else if(times>5&&times<=8){document.writeln(", next time will be better.");}
+		else{document.writeln(", don't be sad, it's just a game. ouo")}
+	}
+
+</script>
+</head>
+<body>
+	<input type="button" name="" value="Game Start" onclick="game()">
+</body>
+</html>
